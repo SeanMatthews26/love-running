@@ -266,6 +266,28 @@ hr {
   color: #fafafa;
 }
 
+/*Galler*/
+#gallery img
+{
+  width: 100%;
+  line-height: 1em;
+}
+
+#photos
+{
+  line-height: 0;
+}
+
+/*Media Query - Large Phones*/
+@media screen and (min-width: 576px) {
+  #photos
+  {
+    column-count: 2;
+    column-gap:0;
+  }
+}
+
+
 /*Media Query - Tablets and bigger*/
 @media screen and (min-width: 768px) {
   /*Header*/
@@ -325,6 +347,11 @@ hr {
     text-align:end;
     align-self:flex-end;
    }
+
+   #photos
+   {
+    column-count: 3;
+   }
 }
 
 /*Media Query - Laptops and bigger*/
@@ -333,7 +360,10 @@ hr {
     border-bottom: 1px solid #3a3a3a;
   }
 
-  
+  #photos
+   {
+    column-count: 4;
+   }
 }
 
 @media screen and (min-width: 1200px) {    
